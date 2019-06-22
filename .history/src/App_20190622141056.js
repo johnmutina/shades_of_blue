@@ -1,5 +1,4 @@
 import React from 'react';
-import ColorBoxes from './ColorBoxes';
 import './App.css';
 
 function App() {

@@ -1,0 +1,8 @@
+.ColorBox {
+    display: inline-block;
+    color: white;
+    width: 19.57%;
+    height: 180px;
+    /* padding-top: 80px; */
+    border: 2px solid oldlace;
+}
