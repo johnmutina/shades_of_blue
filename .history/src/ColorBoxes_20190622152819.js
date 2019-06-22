@@ -27,7 +27,6 @@ class ColorBoxes extends Component {
       "#ffffff"
     ]
   };
-
   render() {
     return (
       <div>

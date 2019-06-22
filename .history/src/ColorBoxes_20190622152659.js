@@ -27,13 +27,22 @@ class ColorBoxes extends Component {
       "#ffffff"
     ]
   };
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    console.log("test");
+  }
 
   render() {
     return (
       <div>
         <h1 className="ColorBoxes-title">Shades of Blue</h1>
-        {this.props.colorArr.map(el => (
-          <ColorBox color={el} allColors={this.props.colorArr} />
+        {colorArr.map(el => (
+          <ColorBox color={el} allColors={colorArr} />
         ))}
       </div>
     );

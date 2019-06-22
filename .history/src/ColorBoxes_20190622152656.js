@@ -4,7 +4,7 @@ import "./ColorBoxes.css";
 
 class ColorBoxes extends Component {
   static defaultProps = {
-    colorArr: [
+      colorArr: [
       "#00007f",
       "#000066",
       "#00004c",
@@ -26,14 +26,24 @@ class ColorBoxes extends Component {
       "#e5e5ff",
       "#ffffff"
     ]
-  };
+  }
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    console.log("test");
+  }
 
   render() {
+    let colorArr = 
     return (
       <div>
         <h1 className="ColorBoxes-title">Shades of Blue</h1>
-        {this.props.colorArr.map(el => (
-          <ColorBox color={el} allColors={this.props.colorArr} />
+        {colorArr.map(el => (
+          <ColorBox color={el} allColors={colorArr} />
         ))}
       </div>
     );

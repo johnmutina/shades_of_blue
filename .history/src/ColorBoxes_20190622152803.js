@@ -27,7 +27,11 @@ class ColorBoxes extends Component {
       "#ffffff"
     ]
   };
-
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleClick = this.handleClick.bind(this);
+  }
   render() {
     return (
       <div>
